@@ -9,7 +9,7 @@
                 mae = mean_absolute_error(testy, prediction)
                 return mae
 
-            filePath = input("Enter file path: ")
+            filePath = input("Enter file path:   ")
             data = pd.read_csv(filePath)
             data.dropna(axis=0)
             y = data.Price
